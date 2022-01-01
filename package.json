@@ -1,0 +1,24 @@
+{
+  "name": "projectforsoc",
+  "version": "1.0.0",
+  "description": "Project for winter break",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atemp678/ProjectforSOC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atemp678/ProjectforSOC/issues"
+  },
+  "homepage": "https://github.com/atemp678/ProjectforSOC#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
