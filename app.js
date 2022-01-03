@@ -21,19 +21,26 @@ app.get("/", function (req, res) {
   res.sendFile(html);
 });
 
+app.get("/movie/:id", async function (req, res) {
+  console.log(req.params.id);
+  var movieByID = await getMovieByID(req.params.id);
+  if (movieByID) {
+    res.json({
+      success: true,
+      payload: movieByID,
+    });
+  } else {
+    res.json({
+      success: false,
+    });
+  }
+});
+
 app.get("/movies", async function (req, res) {
   const allMovies = await getMovies();
   res.json({
     success: true,
     payload: allMovies,
-  });
-});
-
-app.get("/movie/:id", async function (req, res) {
-  const movieByID = await getMovieByID();
-  res.json({
-    success: true,
-    payload: movieByID,
   });
 });
 

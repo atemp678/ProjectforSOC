@@ -13,7 +13,13 @@ export async function getMovies() {
 
 // GET A Movie BY ID
 export async function getMovieByID(id) {
-  const movieById = movies.find(({ id }) => id === id);
+  console.log("id:" + id);
+  var movieById = movies.find((movie) => {
+    console.log(movie);
+    return movie.id == id;
+  });
+  console.log("movie found: ");
+  console.log(movieById);
   if (movieById) {
     return movieById;
   }

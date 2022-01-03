@@ -29,6 +29,36 @@ const movies = [
     author: "Frank Herbert",
     URL: "https://www.youtube.com/watch?v=8g18jFHCLXk",
   },
+  {
+    id: 6,
+    title: "Red Notice",
+    author: "Rawson Marshall Thurber",
+    URL: "https://www.youtube.com/watch?v=Pj0wz7zu3Ms",
+  },
+  {
+    id: 7,
+    title: "Jumanji:The Next Level",
+    author: "Chris Van Allsburg",
+    URL: "https://www.youtube.com/watch?v=rBxcF-r9Ibs",
+  },
+  {
+    id: 8,
+    title: "Iron Man",
+    author: "Stan Lee",
+    URL: "https://www.youtube.com/watch?v=8ugaeA-nMTc",
+  },
+  {
+    id: 9,
+    title: "Deadpool 2",
+    author: "Rhett Reese",
+    URL: "https://www.youtube.com/watch?v=D86RtevtfrA",
+  },
+  {
+    id: 10,
+    title: "Spider-Man: Far from Home",
+    author: "Chris McKenna & Erik Sommers",
+    URL: "https://www.youtube.com/watch?v=Nt9L1jCKGnE",
+  },
 ];
 
 export default movies;
