@@ -37,7 +37,11 @@ app.get("/movie/:id", async function (req, res) {
 });
 
 app.get("/movies", async function (req, res) {
-  const allMovies = await getMovies();
+  const searchString = req.query.search;
+  let allMovies = await getMovies();
+  if (searchString){
+    allMovies = allMovies.filter(movieObj => movieObj.title.toLowerCase().includes(searchString.toLowerCase()))
+  }
   res.json({
     success: true,
     payload: allMovies,
