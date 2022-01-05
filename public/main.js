@@ -1,6 +1,4 @@
+const getMovie = document.querySelector(".button"); 
 
-
-let button=document.querySelector(".button")
-
-addEventListener.button ("onClick", getMovieByID())
+addEventListener.getMovie("onClick", getMovieByID()); 
 
